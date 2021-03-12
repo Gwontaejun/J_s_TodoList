@@ -12,8 +12,8 @@ React-Redux를 이용한 TodoList프로젝트.
 
 ---------------------------------------
 ## 주요기능
-1. React-Redux를 이용한 state관리 (TodoList의 입력 및 출력)
-2. React-Persist를 이용한 React-Redux의 store를 새로고침 후에도 유지가능 하도록 구현.
+1. React-Redux를 이용하여 state관리 (TodoList의 입력 및 출력)
+2. React-Persist를 이용하여 React-Redux의 store를 새로고침 후에도 유지가능 하도록 구현.
 
 ---------------------------------------
 ## 개발중 막혔던점이나 힘들었던점
