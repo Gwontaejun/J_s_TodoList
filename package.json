@@ -1,5 +1,4 @@
 {
-  "homepage": "https://gwontaejun.github.io/J_s_TodoList/build",
   "name": "j_s_todolist",
   "version": "0.1.0",
   "private": true,
@@ -23,9 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "react-scripts build", 
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
