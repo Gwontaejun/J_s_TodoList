@@ -1,7 +1,11 @@
 # TodoList 프로젝트(1인개발)
 React-Redux를 이용한 TodoList프로젝트.
 
-기술스택 Html,Css,React,React-Redux
+기술스택
+
+UI 구현 : Html,Css,React
+
+State 관리 : React-Redux
 
 ---------------------------------------
 ## 폴더 및 파일 정리설명
