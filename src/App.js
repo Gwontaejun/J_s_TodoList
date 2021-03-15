@@ -13,8 +13,6 @@ class App extends Component {
       Minutes: new Date().getMinutes(),
       Seconds: new Date().getSeconds(),
     }
-
-    this.TimeSetting = this.TimeSetting.bind(this);
   }
 
   componentWillMount() {
@@ -27,11 +25,11 @@ class App extends Component {
     }, 1000);
   }
 
-  componentWillUnmount(){ //종료되면 반복하는것도 클리어시키기
+  componentWillUnmount() { //종료되면 반복하는것도 클리어시키기
     clearInterval(this.Interval)
   }
 
-  TimeSetting() {
+  TimeSetting = () => {
     let Hours = new Date().getHours() + "";
     let Minutes = new Date().getMinutes() + "";
     let Seconds = new Date().getSeconds() + "";
@@ -54,9 +52,9 @@ class App extends Component {
       <div className={"App"}>
         <div className={"Main"}>
           <div className={"Main_Head"}>
-          <h1 className={"Main_Title"}>
-            {this.state.Hours}:{this.state.Minutes}:{this.state.Seconds}
-          </h1>
+            <h1 className={"Main_Title"}>
+              {this.state.Hours}:{this.state.Minutes}:{this.state.Seconds}
+            </h1>
           </div>
           <div className={"Main_Body"}>
             <TodoListinput />

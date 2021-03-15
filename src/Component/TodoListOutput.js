@@ -14,12 +14,12 @@ class TodoListOutput extends Component {
               <div key={index} className={"ListStyle"}>
                 <h2 style={{ margin: 0, width: "80%" }}>{index + 1}.{data}</h2>
                 <div style={{ display: "flex", width: "20%", justifyContent: "flex-end" }}>
-                  <button className={"ButtonStyle"} style={{ background: "#00be00", marginRight: "1%" }} onClick={function () {
+                  <button className={"ButtonStyle"} style={{ background: "#00be00", marginRight: "1%" }} onClick={(() => {
                     this.props.onClickFinish(data);
-                  }.bind(this)}><Check /></button>
-                  <button className={"ButtonStyle"} style={{ background: "#dc0000" }} onClick={function () {
+                  })}><Check /></button>
+                  <button className={"ButtonStyle"} style={{ background: "#dc0000" }} onClick={(() => {
                     this.props.onClickDelete(data);
-                  }.bind(this)}><DeleteForever /></button>
+                  })}><DeleteForever /></button>
                 </div>
               </div>
             )
@@ -32,12 +32,12 @@ class TodoListOutput extends Component {
               <div key={index} className={"ListStyle"}>
                 <h2 style={{ margin: 0, width: "80%" }}>{index + 1}.{data}</h2>
                 <div style={{ display: "flex", width: "20%", justifyContent: "flex-end" }}>
-                  <button className={"ButtonStyle"} style={{ background: "#00be00", marginRight: "1%" }} onClick={function () {
+                  <button className={"ButtonStyle"} style={{ background: "#00be00", marginRight: "1%" }} onClick={(() => {
                     this.props.onClickFinishDataRollback(data);
-                  }.bind(this)}><History /></button>
-                  <button className={"ButtonStyle"} style={{ background: "#dc0000" }} onClick={function () {
+                  })}><History /></button>
+                  <button className={"ButtonStyle"} style={{ background: "#dc0000" }} onClick={(() => {
                     this.props.onClickFinishDataDelete(data);
-                  }.bind(this)}><DeleteForever /></button>
+                  })}><DeleteForever /></button>
                 </div>
               </div>
             )
