@@ -3,6 +3,8 @@ React-Redux를 이용한 TodoList프로젝트.
 
 ### 서비스 주소 : https://j-s-todolist.netlify.app/
 
+---------------------------------------
+
 ### 기술스택
 
 UI 구현 : Html,Css,React
