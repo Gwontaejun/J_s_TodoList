@@ -34,7 +34,6 @@ class App extends Component {
     let Minutes = new Date().getMinutes() + "";
     let Seconds = new Date().getSeconds() + "";
 
-    console.log(Seconds);
     if (Hours.length === 1) {
       Hours = "0" + Hours;
     }

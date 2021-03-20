@@ -14,7 +14,7 @@ function reducer(state, action) {
     //데이터 입력시 실행. TodoList의 배열에 Title을 concat으로 붙여줌.
     if (action.type === "InputData") {
         //데이터 입력시 TodoList에 이미 같은값이 있으면 alert을 띄워줌.
-        if (state.TodoList.indexOf(action.Title) == -1) {
+        if (state.TodoList.indexOf(action.Title) === -1) {
             return { ...state, TodoList: state.TodoList.concat(action.Title) }
         } else alert("해당값이 리스트에 있습니다.");
     }
