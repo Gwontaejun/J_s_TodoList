@@ -1,4 +1,4 @@
-import { React, Component } from 'react';
+import React, { Component } from 'react';
 import TodoListinput from './Container/TodoListInput';
 import TodoListOutput from './Container/TodoListOutput';
 import './Style/Component.css';

@@ -1,14 +1,14 @@
 import TodoListOutput from "../Component/TodoListOutput";
 import { connect } from 'react-redux';
 
-function mapReduxStateToReactProps(state) {
+const mapReduxStateToReactProps = (state) => {
     return {
         //TodoList, FinishList props로 store의 TodoList 및 FinishList값을 넣어줌.
         TodoList: state.TodoList,
         FinishList: state.FinishList
     }
 }
-function mapReduxDispatchToReactProps(dispatch) {
+const mapReduxDispatchToReactProps = (dispatch) => {
     return {
         //할일 리스트의 삭제버튼 클릭 이벤트
         onClickDelete: function (Title) {

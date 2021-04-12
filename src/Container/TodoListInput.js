@@ -1,7 +1,7 @@
 import TodoListInput from "../Component/TodoListInput";
 import { connect } from 'react-redux';
 
-function mapReduxDispatchToReactProps(dispatch) {
+const mapReduxDispatchToReactProps = (dispatch) => {
     return {
         //할일을 입력하면 작동하는 이벤트.
         onClickInput: function (Title) {
