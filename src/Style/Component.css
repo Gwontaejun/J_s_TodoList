@@ -4,17 +4,22 @@
     height: 100%;
     vertical-align: middle;
     background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .Main {
-    height: 85%;
+    height: 95%;
     margin: auto;
 }
-.Main_Title {
+.Main_Title, .Main_Weather {
     margin: 0;
     text-align: center;
     height:15%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Main_Weather {
+    display:flex;
+    justify-content: center;
 }
 .Main_Body {
     margin: auto;
@@ -46,9 +51,6 @@
 
 /*일반적인 PC화면에서의 스타일*/
 @media (min-width:769px){
-    .App{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../Image/PCBackground.jpg");
-    }
     .Main {
         border-radius: 5%;
         width: 100ch;
@@ -70,9 +72,6 @@
 
 /*일반적인 모바일화면에서의 스타일*/
 @media (max-width:768px){
-    .App{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../Image/TABLEandMOBILEBackground.jpg");
-    }
     .Main {
         border-radius: 5%;
         width: 400px;
