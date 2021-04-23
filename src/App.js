@@ -34,6 +34,12 @@ class App extends Component {
   }
 
   weatherSetting = (city, cityKRName) => {
+    // 본래 아래의 코드로 위치정보를 가져온 후 날씨 API에 넣어서 현재위치의 날씨를 보여주려했지만
+    // 무슨이유에서인지 날씨 API가 q=... 부분을 제거하면 400에러가 남.
+    // navigator.geolocation.getCurrentPosition(function(pos) {
+    //   var latitude = pos.coords.latitude;
+    //   var longitude = pos.coords.longitude;
+    // });
     const cityName = city;
     const apiKey = '603256df3e8c6937e084b42b21843524';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
