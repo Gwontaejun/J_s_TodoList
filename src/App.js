@@ -42,7 +42,6 @@ class App extends Component {
       .then(res => {
         const data = res.data;
         data.name = cityKRName;
-        console.log("data",data, data.weather[0].icon);
         this.setState({ WeatherTemp: data.main.temp, WeatherIcon: data.weather[0].icon});
         if (data.weather[0].main === "Rain") this.setState({ WeatherVideo: Rain });
         else if (data.weather[0].main === "Snow") this.setState({ WeatherVideo: Snow });
