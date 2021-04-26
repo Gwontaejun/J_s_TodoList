@@ -7,7 +7,7 @@ const TodoListOutput = (props) => {
   return (
     <div className={"TodoListOutput"}>
       <h1 style={{ width: "100%", textAlign: "center", margin: "2%" }}>할일 리스트</h1>
-      <div style={{ height: "40%", overflowY: "auto" }}>
+      <div style={{ height: "35%", overflowY: "auto" }}>
         {props.TodoList.map((data, index) => {
           return (
             <div key={index} className={"ListStyle"}>
@@ -25,7 +25,7 @@ const TodoListOutput = (props) => {
         })}
       </div>
       <h1 style={{ width: "100%", textAlign: "center", margin: "2%" }}>완료 리스트</h1>
-      <div style={{ height: "40%", overflowY: "auto" }}>
+      <div style={{ height: "35%", overflowY: "auto" }}>
         {props.FinishList.map((data, index) => {
           return (
             <div key={index} className={"ListStyle"}>
