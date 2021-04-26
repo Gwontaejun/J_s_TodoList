@@ -36,18 +36,16 @@ class App extends Component {
   }
 
   weatherSetting = () => {
-    // 본래 아래의 코드로 위치정보를 가져온 후 날씨 API에 넣어서 현재위치의 날씨를 보여주려했지만
-    // 무슨이유에서인지 날씨 API가 q=... 부분을 제거하면 400에러가 남.
     var latitude;
     var longitude;
     function location(pos) {
       latitude = pos.coords.latitude;
       longitude = pos.coords.longitude;
     }
-    navigator.geolocation.getCurrentPosition(location);
+    navigator.geolocation.getCurrentPosition(location); //위도 경도 가져오기
     setTimeout(() => {
       const apiKey = '603256df3e8c6937e084b42b21843524';
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`; //위도 경도에 따른 날씨API
       axios.get(url)
         .then(res => {
           const data = res.data;
